@@ -1,0 +1,12 @@
+print("Welcome to the log")
+workFile = open('pog_log.txt',"a")
+toLog = input('What is your name?\n')
+YorN = input("Any other info you want to be under your name?(y or n)\n")
+while YorN == "yes" or YorN == "y":
+  toLog2 = input("What?(Put it all in this one input. use '///' to mark new info)\n")
+  workFile.write(toLog + "\n")
+  workFile.write(toLog2 + "\n" + "\n")
+  workFile.close()
+  break
+while  YorN == "no" or YorN == "n":
+  workFile.close()
